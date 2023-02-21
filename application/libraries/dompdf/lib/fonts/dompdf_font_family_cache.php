@@ -78,16 +78,16 @@
     'normal' => $fontDir . '/DejaVuSerif',
   ),
   'font awesome 5 brands' => array(
-    'normal' => $fontDir . '/font_awesome_5_brands_normal_cdeae316b4156185e40abc7d9eb08a76',
+    'normal' => $fontDir . '/font_awesome_5_brands_normal_56c00d01e60c89b2ccbd8e4bd7c67ecf',
   ),
   'font awesome 5 free' => array(
-    'normal' => $fontDir . '/font_awesome_5_free_normal_b8a16eeb471354877b5f3bad3f0d6c74',
-    '900' => $fontDir . '/font_awesome_5_free_900_c3b91c4b63d9691acf39d410fd9e3f70',
+    'normal' => $fontDir . '/font_awesome_5_free_normal_5d5671d8f09972dd969e829507ee4ce3',
+    '900' => $fontDir . '/font_awesome_5_free_900_9313f46f2b787ceda6a8c753d60cdbfe',
   ),
   'nunito' => array(
-    'normal' => $fontDir . '/nunito_normal_ab2f58f5c2d50d05b471eff5d71aa4ec',
-    '600' => $fontDir . '/nunito_600_2f44a54e7886919e85daa66d944c1965',
-    'bold' => $fontDir . '/nunito_bold_9066513fbd07f280d87f43e3f82744ed',
-    '800' => $fontDir . '/nunito_800_00c084e22ed206f9e9934d87fa672232',
+    'normal' => $fontDir . '/nunito_normal_1b7fbf18d65a1ed7579a9011ab5de84b',
+    '600' => $fontDir . '/nunito_600_7bcf157455418c99e3bff9462f409feb',
+    'bold' => $fontDir . '/nunito_bold_d635bbc25faf1d5daa81c0db3c992333',
+    '800' => $fontDir . '/nunito_800_f35d19c902cca427122a0e4c0a7cff24',
   ),
 ) ?>

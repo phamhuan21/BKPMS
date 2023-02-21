@@ -23,22 +23,9 @@
                   <div class="card card-primary">
                     <div class="card-body">
                       <ul class="nav nav-pills flex-column">
-                        <li class="nav-item"><a href="<?=base_url('settings')?>" class="nav-link <?=($main_page == 'general')?'active':''?>"><i class="fas fa-cogs"></i> <?=$this->lang->line('general')?$this->lang->line('general'):'General'?></a></li>
-                        
-                        <li class="nav-item"><a href="<?=base_url('settings/company')?>" class="nav-link <?=($main_page == 'company')?'active':''?>"><i class="fas fa-copyright"></i> <?=$this->lang->line('company')?$this->lang->line('company'):'Company'?></a></li>
-                        
-                        <li class="nav-item"><a href="<?=base_url('settings/payment')?>" class="nav-link <?=($main_page == 'payment')?'active':''?>"><i class="fab fa-paypal"></i> <?=$this->lang->line('payment_gateway')?$this->lang->line('payment_gateway'):'Payment Gateway'?></a></li>
-
                         <li class="nav-item"><a href="<?=base_url('settings/email')?>" class="nav-link <?=($main_page == 'email')?'active':''?>"><i class="fas fa-at"></i> <?=$this->lang->line('email')?$this->lang->line('email'):'Email'?></a></li>
                         <li class="nav-item"><a href="<?=base_url('settings/email-templates')?>" class="nav-link <?=($main_page == 'email-templates')?'active':''?>"><i class="fas fa-mail-bulk"></i> <?=$this->lang->line('email_templates')?$this->lang->line('email_templates'):'Email Templates'?></a></li>
                         <li class="nav-item"><a href="<?=base_url('settings/user-permissions')?>" class="nav-link <?=($main_page == 'permissions')?'active':''?>"><i class="fas fa-user-cog"></i> <?=$this->lang->line('user_permissions')?$this->lang->line('user_permissions'):'User Permissions'?></a></li>
-                        <li class="nav-item"><a href="<?=base_url('languages')?>" class="nav-link <?=($main_page == 'languages')?'active':''?>"><i class="fa fa-language"></i> <?=$this->lang->line('languages')?$this->lang->line('languages'):'Languages'?></a></li>
-                        
-                        <li class="nav-item"><a href="<?=base_url('settings/taxes')?>" class="nav-link <?=($main_page == 'taxes')?'active':''?>"><i class="fas fa-money-bill-alt"></i> <?=$this->lang->line('taxes')?$this->lang->line('taxes'):'Taxes'?></a></li>
-                        
-                        <li class="nav-item"><a href="<?=base_url('settings/update')?>" class="nav-link <?=($main_page == 'update')?'active':''?>"><i class="fas fa-hand-holding-heart"></i> <?=$this->lang->line('update')?$this->lang->line('update'):'Update'?></a></li>
-
-                        <li class="nav-item"><a href="<?=base_url('settings/custom-code')?>" class="nav-link <?=($main_page == 'custom-code')?'active':''?>"><i class="fas fa-code"></i> <?=$this->lang->line('custom_code')?$this->lang->line('custom_code'):'Custom Code'?></a></li>
                       </ul>
                     </div>
                   </div>

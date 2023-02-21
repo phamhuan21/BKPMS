@@ -82,47 +82,6 @@
       <?php if($this->ion_auth->is_admin() || permissions('client_view')){ ?>  
         <li <?=(current_url() == base_url('users/client'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('users/client')?>"><i class="fas fa-handshake text-warning"></i> <span><?=$this->lang->line('clients')?$this->lang->line('clients'):'Clients'?></span></a></li>
       <?php } ?>
-
-      <?php if($this->ion_auth->is_admin() || permissions('lead_view')){ ?>  
-        <li <?=(current_url() == base_url('leads'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('leads')?>"><i class="fas fa-phone text-danger"></i> <span><?=$this->lang->line('leads')?$this->lang->line('leads'):'Leads'?></span></a></li>
-      <?php } ?>
-
-      <?php if($this->ion_auth->is_admin() || $this->ion_auth->in_group(1)){ ?>           
-        <li class="dropdown <?=(current_url() == base_url('invoices/payments') || $this->uri->segment(2) == 'payments'|| current_url() == base_url('expenses'))?'active':''; ?>">
-        <a class="nav-link has-dropdown" href="#"><i class="fas fa-credit-card text-info"></i> 
-        <span><?=$this->lang->line('finance')?$this->lang->line('finance'):'Finance'?></span></a>
-          <ul class="dropdown-menu">
-
-            <li <?=(current_url() == base_url('invoices/payments') || $this->uri->segment(2) == 'payments')?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('invoices/payments')?>"><?=$this->lang->line('payments')?$this->lang->line('payments'):'Payments'?><?=$this->ion_auth->is_admin()?' / '.($this->lang->line('income')?htmlspecialchars($this->lang->line('income')):'Income'):''?></a></li>
-
-            <?php if($this->ion_auth->is_admin()){ ?>
-              <li <?=(current_url() == base_url('expenses'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('expenses')?>"><?=$this->lang->line('expenses')?$this->lang->line('expenses'):'Expenses'?></a></li>
-            <?php } ?>
-          </ul>
-        </li>
-      <?php } ?>
-
-      <?php if($this->ion_auth->is_admin() || $this->ion_auth->in_group(1)){ ?>           
-        <li class="dropdown <?=((current_url() == base_url('invoices') || current_url() == base_url('estimates') || current_url() == base_url('products') || current_url() == base_url('settings/taxes') || $this->uri->segment(1) == 'invoices' || $this->uri->segment(1) == 'estimates') && ($this->uri->segment(2) != 'payments'))?'active':''; ?>">
-        <a class="nav-link has-dropdown" href="#"><i class="fas fa-shopping-cart text-success"></i> 
-        <span><?=$this->lang->line('sales')?$this->lang->line('sales'):'Sales'?></span></a>
-          <ul class="dropdown-menu">
-            <li <?=(current_url() == base_url('invoices') || $this->uri->segment(1) == 'invoices' && ($this->uri->segment(2) != 'payments'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('invoices')?>"><?=$this->lang->line('invoices')?$this->lang->line('invoices'):'Invoices'?></a></li> 
-
-            <li <?=(current_url() == base_url('estimates') || $this->uri->segment(1) == 'estimates')?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('estimates')?>"><?=$this->lang->line('estimates')?$this->lang->line('estimates'):'Estimates'?></a></li> 
-
-            <?php if($this->ion_auth->is_admin()){ ?>
-              <li <?=(current_url() == base_url('products'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('products')?>"><?=$this->lang->line('products')?$this->lang->line('products'):'Products'?></a></li>
-            <?php } ?>
-
-            <?php if($this->ion_auth->is_admin()){ ?>
-              <li <?=(current_url() == base_url('settings/taxes'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('settings/taxes')?>"><?=$this->lang->line('taxes')?$this->lang->line('taxes'):'Taxes'?></a></li>
-            <?php } ?>
-
-          </ul>
-        </li>
-      <?php } ?>
-
       
       <?php if($this->ion_auth->is_admin() || permissions('user_view')){ ?> 
         <li <?=(current_url() == base_url('users'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('users')?>"><i class="fas fa-users text-dark"></i> <span><?=$this->lang->line('team_members')?$this->lang->line('team_members'):'Team Members'?></span></a></li>
@@ -174,22 +133,12 @@
 
           <li <?=(current_url() == base_url('reports/meetings'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('reports/meetings')?>"><?=$this->lang->line('video_meetings')?htmlspecialchars($this->lang->line('video_meetings')):'Video Meetings'?></a></li>
 
-          <li <?=(current_url() == base_url('reports/leads'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('reports/leads')?>"><?=$this->lang->line('leads')?htmlspecialchars($this->lang->line('leads')):'Leads'?></a></li>
-
+        
           <li <?=(current_url() == base_url('reports/timesheet'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('reports/timesheet')?>"><?=$this->lang->line('timesheet')?htmlspecialchars($this->lang->line('timesheet')):'Timesheet'?></a></li>
 
           <li <?=(current_url() == base_url('reports/leaves'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('reports/leaves')?>"><?=$this->lang->line('leaves')?htmlspecialchars($this->lang->line('leaves')):'Leaves'?></a></li>
 
           <li <?=(current_url() == base_url('reports/attendance'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('reports/attendance')?>"><?=$this->lang->line('attendance')?htmlspecialchars($this->lang->line('attendance')):'Attendance'?></a></li>
-
-          <li <?=(current_url() == base_url('reports/estimates'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('reports/estimates')?>"><?=$this->lang->line('estimates')?htmlspecialchars($this->lang->line('estimates')):'Estimates'?></a></li>
-
-
-              <li <?=(current_url() == base_url('reports/income'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('reports/income')?>"><?=$this->lang->line('income')?$this->lang->line('income'):'Income'?></a></li>
-
-              <li <?=(current_url() == base_url('reports/expenses'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('reports/expenses')?>"><?=$this->lang->line('expenses')?$this->lang->line('expenses'):'Expenses'?></a></li> 
-
-              <li <?=(current_url() == base_url('reports'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('reports')?>"><?=$this->lang->line('income_vs_expenses')?$this->lang->line('income_vs_expenses'):'Income VS Expenses'?></a></li>
           </ul>
         </li>
       <?php } ?>
@@ -201,25 +150,12 @@
         <span><?=$this->lang->line('settings')?$this->lang->line('settings'):'Settings'?></span></a>
           <ul class="dropdown-menu">
 
-              <li <?=(current_url() == base_url('settings'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('settings')?>"><?=$this->lang->line('general')?$this->lang->line('general'):'General'?></a></li>
-              
-              <li <?=(current_url() == base_url('settings/company'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('settings/company')?>"><?=$this->lang->line('company')?$this->lang->line('company'):'Company'?></a></li>
-
-              <li <?=(current_url() == base_url('settings/payment'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('settings/payment')?>"><?=$this->lang->line('payment_gateway')?$this->lang->line('payment_gateway'):'Payment Gateway'?></a></li>
 
               <li <?=(current_url() == base_url('settings/email'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('settings/email')?>"><?=$this->lang->line('email')?$this->lang->line('email'):'Email'?></a></li>
 
               <li <?=(current_url() == base_url('settings/email-templates'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('settings/email-templates')?>"><?=$this->lang->line('email_templates')?$this->lang->line('email_templates'):'Email Templates'?></a></li>
 
               <li <?=(current_url() == base_url('settings/user-permissions'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('settings/user-permissions')?>"><?=$this->lang->line('user_permissions')?$this->lang->line('user_permissions'):'User Permissions'?></a></li>
-
-              <li <?=(current_url() == base_url('languages'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('languages')?>"><?=$this->lang->line('languages')?$this->lang->line('languages'):'Languages'?></a></li>
-              
-              <li <?=(current_url() == base_url('settings/taxes'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('settings/taxes')?>"><?=$this->lang->line('taxes')?$this->lang->line('taxes'):'Taxes'?></a></li>
-
-              <li <?=(current_url() == base_url('settings/update'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('settings/update')?>"><?=$this->lang->line('update')?$this->lang->line('update'):'Update'?></a></li>
-
-              <li <?=(current_url() == base_url('settings/custom-code'))?'class="active"':''; ?>><a class="nav-link" href="<?=base_url('settings/custom-code')?>"><?=$this->lang->line('custom_code')?$this->lang->line('custom_code'):'Custom Code'?></a></li>
 
           </ul>
         </li>

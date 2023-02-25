@@ -1684,11 +1684,11 @@ class Projects extends CI_Controller
 					$template_data['BUDGET'] = $this->input->post('budget');
 					$template_data['PROJECT_URL'] = base_url('projects');
 					$email_template = render_email_template('new_project', $template_data);
-
+					$email_template_client = render_email_template('new_project_client', $template_data);
 					if($this->input->post('client')){
 						$data = array(
 							'notification' => '<span class="text-info">'.$this->input->post('title').'</span>',
-							'type' => 'new_project',	
+							'type' => 'new_project_client',	
 							'type_id' => $project_id,	
 							'from_id' => $this->session->userdata('user_id'),
 							'to_id' => $this->input->post('client'),	
@@ -1696,7 +1696,7 @@ class Projects extends CI_Controller
 						$notification_id = $this->notifications_model->create($data);
 						if($this->input->post('send_email_notification')){
 							$to_user = $this->ion_auth->user($this->input->post('client'))->row();
-							send_mail($to_user->email, $email_template[0]['subject'], $email_template[0]['message']);
+							send_mail($to_user->email, $email_template_client[0]['subject'], $email_template_client[0]['message']);
 						}
 					}
 
@@ -1735,6 +1735,10 @@ class Projects extends CI_Controller
 								'to_id' => $user_id,	
 							);
 							$notification_id = $this->notifications_model->create($data);
+							if($this->input->post('send_email_notification')){
+								$to_user = $this->ion_auth->user($user_id)->row();
+								send_mail($to_user->email, $email_template[0]['subject'], $email_template[0]['message']);
+							}
 						}
 					}else{
 						$user_data = array(
@@ -2131,10 +2135,3 @@ class Projects extends CI_Controller
 	}
 
 }
-
-
-
-
-
-
-

@@ -43,6 +43,7 @@ if($my_current_lang){
   <link rel="stylesheet" href="<?=base_url('assets/modules/dragula/dragula.min.css');?>" >
   <link rel="stylesheet" href="<?=base_url('assets/modules/codemirror/lib/codemirror.css');?>">
   <link rel="stylesheet" href="<?=base_url('assets/modules/codemirror/theme/duotone-dark.css');?>">
+  <link rel="stylesheet" href="<?=base_url('assets/css/renew.css');?>">
 
   <!-- Template CSS -->
   <?php if($rtl){ ?>

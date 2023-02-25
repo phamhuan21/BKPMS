@@ -28,9 +28,9 @@ function get_notifications_live()
         </a>';
     }
     
+    $whole_noti = '';
     if($notifications){ 
         $new_noti = false;
-        $whole_noti = '';
 
         foreach($notifications as $notification){
             $profile = '';

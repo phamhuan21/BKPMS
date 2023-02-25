@@ -162,22 +162,22 @@
     </div>
     <div class="form-group col-md-6">
       <label><?=$this->lang->line('password')?$this->lang->line('password'):'Password'?> <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="right" title="<?=$this->lang->line('leave_password_and_confirm_password_empty_for_no_change_in_password')?$this->lang->line('leave_password_and_confirm_password_empty_for_no_change_in_password'):'Leave Password and Confirm Password empty for no change in Password.'?>"></i></label>
-      <input type="text" name="password"  class="form-control">
+      <input type="password" name="password"  class="form-control">
     </div>
     <div class="form-group col-md-6">
       <label><?=$this->lang->line('confirm_password')?$this->lang->line('confirm_password'):'Confirm Password'?> <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="right" title="<?=$this->lang->line('leave_password_and_confirm_password_empty_for_no_change_in_password')?$this->lang->line('leave_password_and_confirm_password_empty_for_no_change_in_password'):'Leave Password and Confirm Password empty for no change in Password.'?>"></i></label>
-      <input type="text" name="password_confirm"  class="form-control">
+      <input type="password" name="password_confirm"  class="form-control">
     </div>
     <div class="form-group col-md-6">
       <label><?=$this->lang->line('role')?$this->lang->line('role'):'Role'?><span class="text-danger">*</span></label>
       <select name="groups" id="groups" class="form-control select2">
         <?php foreach ($user_groups as $user_group) { 
           if($user_group->id == 1){ ?>
-            <option value="<?=htmlspecialchars($user_group->id)?>"><?=$this->lang->line('admin')?htmlspecialchars($this->lang->line('admin')):'Admin'?></option>
+            <option value="<?=htmlspecialchars($user_group->id)?>"><?=$this->lang->line('admin')?htmlspecialchars($this->lang->line('admin')):'Quản Trị Viên'?></option>
           <?php }elseif($user_group->id == 2){ ?>
-            <option value="<?=htmlspecialchars($user_group->id)?>"><?=$this->lang->line('team_member')?htmlspecialchars($this->lang->line('team_member')):'Team Member'?></option>
+            <option value="<?=htmlspecialchars($user_group->id)?>"><?=$this->lang->line('team_member')?htmlspecialchars($this->lang->line('team_member')):'Thành viên nhóm'?></option>
           <?php }elseif($user_group->id == 3){ ?>
-            <option value="<?=htmlspecialchars($user_group->id)?>"><?=$this->lang->line('clients')?htmlspecialchars($this->lang->line('clients')):'Clients'?></option>
+            <option value="<?=htmlspecialchars($user_group->id)?>"><?=$this->lang->line('clients')?htmlspecialchars($this->lang->line('clients')):'Khách hàng'?></option>
           <?php } ?>
         <?php } ?>
       </select>

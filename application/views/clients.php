@@ -152,18 +152,18 @@
     </div>
     <div class="form-group col-md-6">
       <label><?=$this->lang->line('password')?$this->lang->line('password'):'Password'?> <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="right" title="<?=$this->lang->line('leave_password_and_confirm_password_empty_for_no_change_in_password')?$this->lang->line('leave_password_and_confirm_password_empty_for_no_change_in_password'):'Leave Password and Confirm Password empty for no change in Password.'?>"></i></label>
-      <input type="text" name="password"  class="form-control">
+      <input type="password" name="password"  class="form-control">
     </div>
     <div class="form-group col-md-6">
       <label><?=$this->lang->line('confirm_password')?$this->lang->line('confirm_password'):'Confirm Password'?> <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="right" title="<?=$this->lang->line('leave_password_and_confirm_password_empty_for_no_change_in_password')?$this->lang->line('leave_password_and_confirm_password_empty_for_no_change_in_password'):'Leave Password and Confirm Password empty for no change in Password.'?>"></i></label>
-      <input type="text" name="password_confirm"  class="form-control">
+      <input type="password" name="password_confirm"  class="form-control">
     </div>
     
     <div class="form-group col-md-6">
       <label><?=$this->lang->line('role')?$this->lang->line('role'):'Role'?><span class="text-danger">*</span></label>
       <select name="groups" id="groups" class="form-control select2">
         <?php foreach ($user_groups as $user_group) { ?>
-          <option value="<?=htmlspecialchars($user_group->id)?>"><?=ucfirst(htmlspecialchars($user_group->name))?></option>
+          <option value="<?=htmlspecialchars($user_group->id)?>"><?=ucfirst(htmlspecialchars($user_group->description))?></option>
         <?php } ?>
       </select>
     </div>

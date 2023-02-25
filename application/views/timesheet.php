@@ -77,15 +77,15 @@
                           <thead>
                             <tr>
                               <?php if($this->ion_auth->is_admin()){ ?>
-                                <th data-field="user" data-sortable="false"><?=$this->lang->line('team_members')?$this->lang->line('team_members'):'Team Members'?></th>
+                                <th data-field="user" class="center-text" data-sortable="false"><?=$this->lang->line('team_members')?$this->lang->line('team_members'):'Team Members'?></th>
                               <?php } ?>
-                              <th data-field="task_title" data-sortable="false"><?=$this->lang->line('task')?$this->lang->line('task'):'Task'?></th>
-                              <th data-field="project_title" data-sortable="false" data-visible="false"><?=$this->lang->line('project')?$this->lang->line('project'):'Project'?></th>
-                              <th data-field="starting_time" data-sortable="true"><?=$this->lang->line('starting_time')?$this->lang->line('starting_time'):'Starting Time'?></th>
-                              <th data-field="ending_time" data-sortable="true"><?=$this->lang->line('ending_time')?$this->lang->line('ending_time'):'Ending Time'?></th>
-                              <th data-field="total_time" data-sortable="false"><?=$this->lang->line('total_time')?$this->lang->line('total_time'):'Total Time'?></th>
-                              <th data-field="note" data-sortable="false" data-visible="false"><?=$this->lang->line('note')?$this->lang->line('note'):'Note'?></th>
-                              <th data-field="action" data-sortable="false"><?=$this->lang->line('action')?$this->lang->line('action'):'Action'?></th>
+                              <th data-field="task_title" class="center-text" data-sortable="false"><?=$this->lang->line('task')?$this->lang->line('task'):'Task'?></th>
+                              <th data-field="project_title" class="center-text" data-sortable="false" data-visible="false"><?=$this->lang->line('project')?$this->lang->line('project'):'Project'?></th>
+                              <th data-field="starting_time" class="center-text" data-sortable="true"><?=$this->lang->line('starting_time')?$this->lang->line('starting_time'):'Starting Time'?></th>
+                              <th data-field="ending_time" class="center-text" data-sortable="true"><?=$this->lang->line('ending_time')?$this->lang->line('ending_time'):'Ending Time'?></th>
+                              <th data-field="total_time" class="center-text" data-sortable="false"><?=$this->lang->line('total_time')?$this->lang->line('total_time'):'Total Time'?></th>
+                              <th data-field="note" class="center-text" data-sortable="false" data-visible="false"><?=$this->lang->line('note')?$this->lang->line('note'):'Note'?></th>
+                              <th data-field="action" class="center-text" data-sortable="false"><?=$this->lang->line('action')?$this->lang->line('action'):'Action'?></th>
                             </tr>
                           </thead>
                         </table>

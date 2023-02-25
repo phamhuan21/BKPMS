@@ -663,8 +663,8 @@ class Projects_model extends CI_Model
                 $temp[$key]['project_status'] = $this->lang->line('finished')?$this->lang->line('finished'):'Finished';
             }
 
-            $temp[$key]['starting_date'] = format_date($project['starting_date'],system_date_format());
-            $temp[$key]['ending_date'] = format_date($project['ending_date'],system_date_format());
+            $temp[$key]['starting_date'] = $project['starting_date'];
+            $temp[$key]['ending_date'] = $project['ending_date'];
             $days_count = count_days_btw_two_dates(date("Y-m-d"),$project['ending_date']);
             $temp[$key]['days_count'] = $days_count['days'];
             $temp[$key]['days_status'] = $days_count['days_status'];
@@ -824,8 +824,8 @@ class Projects_model extends CI_Model
                 $temp[$key]['task_priority'] = $this->lang->line('high')?$this->lang->line('high'):'High';
             }
             
-            $temp[$key]['due_date'] = format_date($task['due_date'],system_date_format());
-            $temp[$key]['starting_date'] = $task['starting_date']?format_date($task['starting_date'],system_date_format()):'';
+            $temp[$key]['due_date'] = $task['due_date'];
+            $temp[$key]['starting_date'] = $task['starting_date']?$task['starting_date']:'';
             $days_count = count_days_btw_two_dates(date("Y-m-d"),$task['due_date']);
             $temp[$key]['days_count'] = $days_count['days'];
             $temp[$key]['days_status'] = $days_count['days_status'];

@@ -172,7 +172,7 @@ class Meetings extends CI_Controller
 			if($this->form_validation->run() == TRUE){
 
 				$data = array(	
-					'title' => preg_replace("/[^A-Za-z0-9 ]/", '', $this->input->post('title')),	
+					'title' =>  $this->input->post('title'),	
 					'starting_date_and_time' => format_date($this->input->post('starting_date_and_time'),"Y-m-d H:i:s"),	
 					'duration' => $this->input->post('duration'),	
 					'users' => implode(',', $this->input->post('users')),
@@ -305,7 +305,7 @@ class Meetings extends CI_Controller
 						$action .= '<a href="#" class="btn btn-icon btn-sm btn-danger delete_meeting" data-id="'.$meeting["id"].'" data-toggle="tooltip" title="'.($this->lang->line('delete')?htmlspecialchars($this->lang->line('delete')):'Delete').'"><i class="fas fa-trash"></i></a>';
 					}
 
-					$temp[$key]['action'] = '<span class="d-flex">'.$action.'</span>';
+					$temp[$key]['action'] = '<span class="d-flex1">'.$action.'</span>';
 							
 				}
 

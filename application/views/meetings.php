@@ -52,12 +52,12 @@
                           data-query-params="queryParams">
                           <thead>
                             <tr>
-                              <th data-field="title" data-sortable="true"><?=$this->lang->line('title')?$this->lang->line('title'):'Title'?></th>
-                              <th data-field="starting_date_and_time" data-sortable="true"><?=$this->lang->line('starting_time')?$this->lang->line('starting_time'):'Starting Time'?></th>
-                              <th data-field="duration" data-sortable="true"><?=$this->lang->line('duration')?$this->lang->line('duration'):'Duration (Minutes)'?></th>
-                              <th data-field="created_user" data-sortable="false" data-visible="false"><?=$this->lang->line('scheduled_by')?$this->lang->line('scheduled_by'):'Scheduled By'?></th>
-                              <th data-field="status" data-sortable="true"><?=$this->lang->line('status')?$this->lang->line('status'):'Status'?></th>
-                              <th data-field="action" data-sortable="true"><?=$this->lang->line('action')?$this->lang->line('action'):'Action'?></th>
+                              <th data-field="title" class="center-text" data-sortable="true"><?=$this->lang->line('title')?$this->lang->line('title'):'Title'?></th>
+                              <th data-field="starting_date_and_time" class="center-text" data-sortable="true"><?=$this->lang->line('starting_time')?$this->lang->line('starting_time'):'Starting Time'?></th>
+                              <th data-field="duration" class="center-text" data-sortable="true"><?=$this->lang->line('duration')?$this->lang->line('duration'):'Duration (Minutes)'?></th>
+                              <th data-field="created_user" class="center-text" data-sortable="false" data-visible="false"><?=$this->lang->line('scheduled_by')?$this->lang->line('scheduled_by'):'Scheduled By'?></th>
+                              <th data-field="status" class="center-text" data-sortable="true"><?=$this->lang->line('status')?$this->lang->line('status'):'Status'?></th>
+                              <th data-field="action" class="center-text" data-sortable="true"><?=$this->lang->line('action')?$this->lang->line('action'):'Action'?></th>
                             </tr>
                           </thead>
                         </table>

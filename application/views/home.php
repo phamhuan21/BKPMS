@@ -11,7 +11,7 @@
             <h1><?=$this->lang->line('dashboard')?$this->lang->line('dashboard'):'Dashboard'?></h1>
           </div>
           <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="col-lg-6 col-md-4 col-sm-12">
               <div class="card  card-primary ard-statistic-2">
                 <div class="card-stats">
                   <div class="card-stats-title"><?=$this->lang->line('project_statistics')?$this->lang->line('project_statistics'):'Project Statistics'?> - 
@@ -62,7 +62,7 @@
             </div>
 
             
-            <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="col-lg-6 col-md-4 col-sm-12">
               <div class="card  card-primary card-statistic-2">
                 <div class="card-stats">
                   <div class="card-stats-title"><?=$this->lang->line('tasks_statistics')?$this->lang->line('tasks_statistics'):'Tasks Statistics'?> - 
@@ -117,29 +117,7 @@
 
             <?php if($this->ion_auth->is_admin() || $this->ion_auth->in_group(3)){ 
               $get_my_invoices_details = get_my_invoices_details();
-            ?>
-
-              <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="card card-primary card-statistic-2">
-                  <div class="card-stats">
-                    <div class="card-stats-title"><?=$this->lang->line('invoices')?$this->lang->line('invoices'):'Invoices'?> (<?=get_currency('currency_symbol')?>)</div>
-                    <div class="card-stats-items mb-3">
-                      <div class="card-stats-item text-danger">
-                        <div class="card-stats-item-count"><?=htmlspecialchars($get_my_invoices_details['due'])?></div>
-                        <div class="card-stats-item-label"><?=$this->lang->line('due')?$this->lang->line('due'):'Due'?></div>
-                      </div>
-                      <div class="card-stats-item text-success">
-                        <div class="card-stats-item-count"><?=htmlspecialchars($get_my_invoices_details['paid'])?></div>
-                        <div class="card-stats-item-label"><?=$this->lang->line('paid')?$this->lang->line('paid'):'Paid'?></div>
-                      </div>
-                      <div class="card-stats-item text-primary">
-                        <div class="card-stats-item-count"><?=htmlspecialchars($get_my_invoices_details['total'])?></div>
-                        <div class="card-stats-item-label"><?=$this->lang->line('total')?$this->lang->line('total'):'Total'?></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            ?>             
             
             <?php }else{ ?>
               <div class="col-lg-4 col-md-4 col-sm-12">

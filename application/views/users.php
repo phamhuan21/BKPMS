@@ -120,11 +120,11 @@
     </div>
     <div class="form-group col-md-6">
       <label><?=$this->lang->line('password')?$this->lang->line('password'):'Password'?><span class="text-danger">*</span></label>
-      <input type="text" name="password"  class="form-control">
+      <input type="password" name="password"  class="form-control">
     </div>
     <div class="form-group col-md-6">
       <label><?=$this->lang->line('confirm_password')?$this->lang->line('confirm_password'):'Confirm Password'?><span class="text-danger">*</span></label>
-      <input type="text" name="password_confirm"  class="form-control">
+      <input type="password" name="password_confirm"  class="form-control">
     </div>
     <div class="form-group col-md-6">
       <label><?=$this->lang->line('role')?$this->lang->line('role'):'Role'?><span class="text-danger">*</span></label>

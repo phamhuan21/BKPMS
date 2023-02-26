@@ -61,14 +61,14 @@
                           <thead>
                             <tr>
                               <?php if($this->ion_auth->is_admin()){ ?>
-                                <th data-field="user" data-sortable="true"><?=$this->lang->line('team_members')?$this->lang->line('team_members'):'Team Members'?></th>
+                                <th data-field="user" class="center-text" data-sortable="true"><?=$this->lang->line('team_members')?$this->lang->line('team_members'):'Team Members'?></th>
                               <?php } ?>
-                              <th data-field="leave_days" class="text-center" data-sortable="true"><?=$this->lang->line('leave_days')?$this->lang->line('leave_days'):'Leave Days'?></th>
-                              <th data-field="starting_date" class="text-center" data-sortable="true"><?=$this->lang->line('starting_date')?$this->lang->line('starting_date'):'Starting Date'?></th>
-                              <th data-field="ending_date" class="text-center" data-sortable="true"><?=$this->lang->line('ending_date')?$this->lang->line('ending_date'):'Ending Date'?></th>
-                              <th data-field="leave_reason" class="text-center" data-sortable="true" data-visible="false"><?=$this->lang->line('leave_reason')?$this->lang->line('leave_reason'):'Leave Reason'?></th>
-                              <th data-field="status" class="text-center" data-sortable="true"><?=$this->lang->line('status')?$this->lang->line('status'):'Status'?></th>
-                              <th data-field="action" class="text-center" data-sortable="false"><?=$this->lang->line('action')?$this->lang->line('action'):'Action'?></th>
+                              <th data-field="leave_days" class="center-text" data-sortable="true"><?=$this->lang->line('leave_days')?$this->lang->line('leave_days'):'Leave Days'?></th>
+                              <th data-field="starting_date" class="center-text" data-sortable="true"><?=$this->lang->line('starting_date')?$this->lang->line('starting_date'):'Starting Date'?></th>
+                              <th data-field="ending_date" class="center-text" data-sortable="true"><?=$this->lang->line('ending_date')?$this->lang->line('ending_date'):'Ending Date'?></th>
+                              <th data-field="leave_reason" class="center-text" data-sortable="true" data-visible="false"><?=$this->lang->line('leave_reason')?$this->lang->line('leave_reason'):'Leave Reason'?></th>
+                              <th data-field="status" class="center-text" data-sortable="true"><?=$this->lang->line('status')?$this->lang->line('status'):'Status'?></th>
+                              <th data-field="action" class="center-text" data-sortable="false"><?=$this->lang->line('action')?$this->lang->line('action'):'Action'?></th>
                             </tr>
                           </thead>
                         </table>

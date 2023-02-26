@@ -69,13 +69,13 @@
                           <thead>
                             <tr>
                               <?php if($this->ion_auth->is_admin()){ ?>
-                                <th data-field="user" data-sortable="false"><?=$this->lang->line('team_members')?$this->lang->line('team_members'):'Team Members'?></th>
+                                <th data-field="user" class="center-text" data-sortable="false"><?=$this->lang->line('team_members')?$this->lang->line('team_members'):'Team Members'?></th>
                               <?php } ?>
-                              <th data-field="check_in" data-sortable="true"><?=$this->lang->line('check_in')?htmlspecialchars($this->lang->line('check_in')):'Check In'?></th>
-                              <th data-field="check_out" data-sortable="true"><?=$this->lang->line('check_out')?htmlspecialchars($this->lang->line('check_out')):'Check Out'?></th>
-                              <th data-field="total_time" data-sortable="false"><?=$this->lang->line('total_time')?$this->lang->line('total_time'):'Total Time'?></th>
-                              <th data-field="note" data-sortable="false" data-visible="false"><?=$this->lang->line('note')?$this->lang->line('note'):'Note'?></th>
-                              <th data-field="action" data-sortable="false"><?=$this->lang->line('action')?$this->lang->line('action'):'Action'?></th>
+                              <th data-field="check_in" class="center-text" data-sortable="true"><?=$this->lang->line('check_in')?htmlspecialchars($this->lang->line('check_in')):'Check In'?></th>
+                              <th data-field="check_out" class="center-text" data-sortable="true"><?=$this->lang->line('check_out')?htmlspecialchars($this->lang->line('check_out')):'Check Out'?></th>
+                              <th data-field="total_time" class="center-text" data-sortable="false"><?=$this->lang->line('total_time')?$this->lang->line('total_time'):'Total Time'?></th>
+                              <th data-field="note" class="center-text" data-sortable="false" data-visible="false"><?=$this->lang->line('note')?$this->lang->line('note'):'Note'?></th>
+                              <th data-field="action" class="center-text" data-sortable="false"><?=$this->lang->line('action')?$this->lang->line('action'):'Action'?></th>
                             </tr>
                           </thead>
                         </table>

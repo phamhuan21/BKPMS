@@ -35,6 +35,7 @@
                           data-pagination="false"
                           data-page-list="[5, 10, 20, 50, 100, 200]"
                           data-search="false" data-show-columns="true"
+                          data-export-types='["txt","excel"]'
                           data-show-refresh="false" data-trim-on-search="false"
                           data-sort-name="id" data-sort-order="DESC"
                           data-show-footer="true"

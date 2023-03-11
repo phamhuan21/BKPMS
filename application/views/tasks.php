@@ -386,7 +386,7 @@
   </div>
   <div class="form-group">
     <label><?=$this->lang->line('description')?$this->lang->line('description'):'Description'?><span class="text-danger">*</span></label>
-    <textarea type="text" name="description" class="form-control"></textarea>
+    <textarea rows="5" style="height:auto;" type="text"  name="description" class="form-control"> </textarea>
   </div>
   
   <span class="row">
@@ -443,7 +443,7 @@
   </div>
   <div class="form-group">
     <label><?=$this->lang->line('description')?$this->lang->line('description'):'Description'?><span class="text-danger">*</span></label>
-    <textarea type="text" name="description" id="description" class="form-control"></textarea>
+    <textarea type="text" rows="5" style="height:auto;" name="description" id="description" class="form-control"></textarea>
   </div>
 
   <span class="row">

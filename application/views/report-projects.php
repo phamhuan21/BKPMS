@@ -74,6 +74,7 @@
                       data-show-refresh="false" data-trim-on-search="false"
                       data-sort-name="id" data-sort-order="DESC"
                       data-mobile-responsive="true"
+                      data-export-types='["txt","excel"]'
                       data-toolbar="" data-show-export="true"
                       data-maintain-selected="true"
                       data-export-options='{

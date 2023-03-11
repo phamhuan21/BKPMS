@@ -55,6 +55,7 @@
                           data-pagination="true"
                           data-page-list="[5, 10, 20, 50, 100, 200]"
                           data-search="true" data-show-columns="true"
+                          data-export-types='["txt","excel"]'
                           data-show-refresh="false" data-trim-on-search="false"
                           data-sort-name="id" data-sort-order="desc"
                           data-mobile-responsive="true"

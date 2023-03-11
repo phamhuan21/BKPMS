@@ -16,10 +16,6 @@
 
           <option value="<?=base_url('settings/email-templates/new_meeting')?>" <?=($this->uri->segment(3) == 'new_meeting')?"selected":""?>> <?=$this->lang->line('new_meeting')?htmlspecialchars($this->lang->line('new_meeting')):'New meeting'?> </option>
 
-          <option value="<?=base_url('settings/email-templates/new_invoice')?>" <?=($this->uri->segment(3) == 'new_invoice')?"selected":""?>> <?=$this->lang->line('new_invoice')?htmlspecialchars($this->lang->line('new_invoice')):'New invoice'?> </option>
-
-          <option value="<?=base_url('settings/email-templates/new_estimate')?>" <?=($this->uri->segment(3) == 'new_estimate')?"selected":""?>> <?=$this->lang->line('new_estimate')?htmlspecialchars($this->lang->line('new_estimate')):'New estimate'?> </option>
-
         </select>
       </div>
       <div class="form-group col-md-12">

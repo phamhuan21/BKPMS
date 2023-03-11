@@ -23,6 +23,7 @@
                     <div class="card-stats-item text-danger">
                       <div class="card-stats-item-count">
                       <?php
+                      //
                         if($this->ion_auth->is_admin()){
                           $pendingP = get_count('id','projects','status=1 OR status=2');
                         }elseif($this->ion_auth->in_group(3)){
@@ -115,11 +116,6 @@
 
 
 
-            <?php if($this->ion_auth->is_admin() || $this->ion_auth->in_group(3)){ 
-              $get_my_invoices_details = get_my_invoices_details();
-            ?>             
-            
-            <?php }else{ ?>
               <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="card card-primary card-statistic-1">
                   <div class="card-icon shadow-primary bg-primary">
@@ -149,7 +145,7 @@
                   </div>
                 </div>
               </div>
-            <?php } ?>
+
 
           </div>
 

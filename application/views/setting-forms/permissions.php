@@ -100,28 +100,7 @@
                               </div>
                           </div>
 
-                          <div class="form-group col-md-12">
-                              <label class="d-block"><?=$this->lang->line('leads')?$this->lang->line('leads'):'Leads'?></label>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="lead_view" name="lead_view" value="<?=(isset($permissions->lead_view) && !empty($permissions->lead_view))?$permissions->lead_view:0?>" <?=(isset($permissions->lead_view) && !empty($permissions->lead_view) && $permissions->lead_view == 1)?'checked':''?>>
-                                <label class="form-check-label" for="lead_view"><?=$this->lang->line('enable')?htmlspecialchars($this->lang->line('enable')):'Enable'?></label>
-                              </div>
 
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="lead_create" name="lead_create" value="<?=(isset($permissions->lead_create) && !empty($permissions->lead_create))?$permissions->lead_create:0?>" <?=(isset($permissions->lead_create) && !empty($permissions->lead_create) && $permissions->lead_create == 1)?'checked':''?>>
-                                <label class="form-check-label" for="lead_create"><?=$this->lang->line('create')?$this->lang->line('create'):'Create'?></label>
-                              </div>
-                              
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="lead_edit" name="lead_edit" value="<?=(isset($permissions->lead_edit) && !empty($permissions->lead_edit))?$permissions->lead_edit:0?>" <?=(isset($permissions->lead_edit) && !empty($permissions->lead_edit) && $permissions->lead_edit == 1)?'checked':''?>>
-                                <label class="form-check-label" for="lead_edit"><?=$this->lang->line('edit')?$this->lang->line('edit'):'Edit'?></label>
-                              </div>
-                              
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="lead_delete" name="lead_delete" value="<?=(isset($permissions->lead_delete) && !empty($permissions->lead_delete))?$permissions->lead_delete:0?>" <?=(isset($permissions->lead_delete) && !empty($permissions->lead_delete) && $permissions->lead_delete == 1)?'checked':''?>>
-                                <label class="form-check-label" for="lead_delete"><?=$this->lang->line('delete')?$this->lang->line('delete'):'Delete'?></label>
-                              </div>
-                          </div>
 
                           <div class="form-group col-md-12">
                               <label class="d-block"><?=$this->lang->line('gantt')?$this->lang->line('gantt'):'Gantt'?></label>
@@ -287,29 +266,7 @@
                               </div>
                           </div>
 
-                          <div class="form-group col-md-12">
-                              <label class="d-block"><?=$this->lang->line('leads')?$this->lang->line('leads'):'Leads'?></label>
-                              
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="client_lead_view" name="client_lead_view" value="<?=(isset($clients_permissions->lead_view) && !empty($clients_permissions->lead_view))?$clients_permissions->lead_view:0?>" <?=(isset($clients_permissions->lead_view) && !empty($clients_permissions->lead_view) && $clients_permissions->lead_view == 1)?'checked':''?>>
-                                <label class="form-check-label" for="client_lead_view"><?=$this->lang->line('enable')?htmlspecialchars($this->lang->line('enable')):'Enable'?></label>
-                              </div>
 
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="client_lead_create" name="client_lead_create" value="<?=(isset($clients_permissions->lead_create) && !empty($clients_permissions->lead_create))?$clients_permissions->lead_create:0?>" <?=(isset($clients_permissions->lead_create) && !empty($clients_permissions->lead_create) && $clients_permissions->lead_create == 1)?'checked':''?>>
-                                <label class="form-check-label" for="client_lead_create"><?=$this->lang->line('create')?$this->lang->line('create'):'Create'?></label>
-                              </div>
-                              
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="client_lead_edit" name="client_lead_edit" value="<?=(isset($clients_permissions->lead_edit) && !empty($clients_permissions->lead_edit))?$clients_permissions->lead_edit:0?>" <?=(isset($clients_permissions->lead_edit) && !empty($clients_permissions->lead_edit) && $clients_permissions->lead_edit == 1)?'checked':''?>>
-                                <label class="form-check-label" for="client_lead_edit"><?=$this->lang->line('edit')?$this->lang->line('edit'):'Edit'?></label>
-                              </div>
-                              
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="client_lead_delete" name="client_lead_delete" value="<?=(isset($clients_permissions->lead_delete) && !empty($clients_permissions->lead_delete))?$clients_permissions->lead_delete:0?>" <?=(isset($clients_permissions->lead_delete) && !empty($clients_permissions->lead_delete) && $clients_permissions->lead_delete == 1)?'checked':''?>>
-                                <label class="form-check-label" for="client_lead_delete"><?=$this->lang->line('delete')?$this->lang->line('delete'):'Delete'?></label>
-                              </div>
-                          </div>
 
                           <div class="form-group col-md-12">
                               <label class="d-block"><?=$this->lang->line('gantt')?$this->lang->line('gantt'):'Gantt'?></label>

@@ -28,42 +28,7 @@ class Settings_model extends CI_Model
             return false;
         }
     }
-    function create_taxes($data){
-        if($this->db->insert('taxes', $data)){
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-    function update_taxes($id,$data){
-        $this->db->where('id', $id);
-        if($this->db->update('taxes', $data)){
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-    function delete_taxes($id){
-        $this->db->where('id', $id);
-        if($this->db->delete('taxes'))
-            return true;
-        else
-            return false;
-    }
-
-    function get_taxes($tax_id = ''){
-        $where = "";
-        $where .= (!empty($tax_id) && is_numeric($tax_id))?" WHERE id=$tax_id":"";
-        $query = $this->db->query("SELECT * FROM taxes $where ");
-        $data = $query->result_array();
-        if($data){
-            return $data;
-        }else{
-            return false;
-        }
-    }
+   
 
     function save_settings($setting_type,$data){
         $this->db->where('type', $setting_type);

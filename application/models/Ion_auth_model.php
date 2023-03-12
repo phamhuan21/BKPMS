@@ -1,24 +1,5 @@
 <?php
-/**
- * Name:    Ion Auth Model
- * Author:  Ben Edmunds
- *           ben.edmunds@gmail.com
- * @benedmunds
- *
- * Added Awesomeness: Phil Sturgeon
- *
- * Created:  10.01.2009
- *
- * Description:  Modified auth system based on redux_auth with extensive customization. This is basically what Redux Auth 2 should be.
- * Original Author name has been kept but that does not mean that the method has not been modified.
- *
- * Requirements: PHP5.6 or above
- *
- * @package    CodeIgniter-Ion-Auth
- * @author     Ben Edmunds
- * @link       http://github.com/benedmunds/CodeIgniter-Ion-Auth
- * @filesource
- */
+
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
@@ -44,31 +25,7 @@ class Ion_auth_model extends CI_Model
 	 */
 	public $tables = [];
 
-	/**
-	 * activation code
-	 * 
-	 * Set by deactivate() function
-	 * Also set on register() function, if email_activation 
-	 * option is activated
-	 * 
-	 * This is the value devs should give to the user 
-	 * (in an email, usually)
-	 * 
-	 * It contains the *user* version of the activation code
-	 * It's a value of the form "selector.validator" 
-	 * 
-	 * This is not the same activation_code as the one in DB.
-	 * The DB contains a *hashed* version of the validator
-	 * and a selector in another column.
-	 * 
-	 * THe selector is not private, and only used to lookup
-	 * the validator.
-	 * 
-	 * The validator is private, and to be only known by the user
-	 * So in case of DB leak, nothing could be actually used.
-	 * 
-	 * @var string
-	 */
+
 	public $activation_code;
 
 	/**

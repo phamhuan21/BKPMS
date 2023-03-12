@@ -27,8 +27,7 @@ class Settings_model extends CI_Model
         }else{
             return false;
         }
-    }
-   
+    }  
 
     function save_settings($setting_type,$data){
         $this->db->where('type', $setting_type);
